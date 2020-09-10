@@ -29,6 +29,11 @@ class JWTManager
     protected $blacklistEnabled = true;
 
     /**
+     * @var boolean
+     */
+    protected $refreshFlow = false;
+
+    /**
      *  @param \Tymon\JWTAuth\Providers\JWT\JWTInterface  $jwt
      *  @param \Tymon\JWTAuth\Blacklist  $blacklist
      *  @param \Tymon\JWTAuth\PayloadFactory  $payloadFactory
